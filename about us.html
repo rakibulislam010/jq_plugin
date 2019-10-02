@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- tiltedpage scroll start -->
+	<link rel="stylesheet" type="text/css" href="lib/tiltedpage scroll/css/tiltedpage-scroll.css">
+	<!-- tiltedpage scroll end -->
+	<!-- WOW start -->
+	<link rel="stylesheet" type="text/css" href="lib/WOW-master/css/animate.css">
+	<!-- WOW end-->
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<title>Document</title>
+</head>
+<body>
+	<!-- counter plugin start	 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Counter Plugin</h1>
+
+				<span class="counter">1,234,567.00</span><br>
+				<span>$</span><span class="counter">1.99</span><br>
+				<span class="counter">12345</span>
+
+			</div>
+		</div>
+	</div>
+	<!-- counter plugin end	 -->
+
+	<!-- curve text start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="curve text-center">Curve Text </h1>
+				<div id=demo>We are the students of SSB-156</div>
+			</div>
+		</div>
+	</div>
+	<!-- curve text end -->
+	<!-- tiltedpage scroll start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Tiltedpage Scroll</h1>
+				<div class="main">
+					<section class="page1">
+						<img src="lib/tiltedpage scroll/img/demo1.jpg" class="img-fluid" alt="">
+					</section>
+					<section class="page1">
+						<img src="lib/tiltedpage scroll/img/demo2.jpg" class="img-fluid" alt="">
+					</section>
+					<section class="page1">
+						<img src="lib/tiltedpage scroll/img/demo3.jpg" class="img-fluid" alt="">
+					</section>
+					<section class="page1">
+						<img src="lib/tiltedpage scroll/img/demo4.jpg" class="img-fluid" alt="">
+					</section>
+					<section class="page1">
+						<img src="lib/tiltedpage scroll/img/demo5.jpg" class="img-fluid" alt="">
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- tiltedpage scroll end-->
+
+	<!-- WOW start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Wow</h1>
+				<div class="wow bounceInUp">
+					<img src="lib/WOW-master/img/success.jpg">
+				</div>
+				<div class="wow swing">
+					<img src="lib/WOW-master/img/demo.jpg">
+				</div>
+				<div class="wow rotateOutDownLeft">
+					<img src="lib/WOW-master/img/demo1.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- WOW end-->
+	<!-- animsition start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="animsition">
+					<h2 class="text-center">Animsition plugin</h2>
+					<a
+					href="index.html" class="animsition-link" data-animsition-out-class="fade-out-right" data-animsition-out-duration="2000">Home</a>
+					<a href="About_us.html" class="animsition-link" data-animsition-out-class="rotate-out" data-animsition-out-duration="500">About Us</a>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+	<!-- animsition start -->
+
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>	
+	<!-- counter plugin -->
+	<script src="lib/counter plugin/waypoints.min.js"></script>
+	<script src="lib/counter plugin/jquery.counterup.min.js"></script>
+	<!-- counter plugin -->
+
+	<!-- curve text -->
+	<script src="lib/Curved-Text/js/jquery.typorize.min.js"></script>
+	<script src="lib/Curved-Text/js/jquery.curvedtext.min.js"></script>
+	<!-- curve text -->
+	<!-- tiltedpage scroll start -->
+	<script src="lib/tiltedpage scroll/js/jquery.tiltedpage-scroll.js"></script>
+	<script src="lib/tiltedpage scroll/js/jquery.tiltedpage-scroll.min.js"></script>
+	<!-- tiltedpage scroll end -->
+	<!-- WOW start -->
+	<script src="lib/WOW-master/dist/wow.min.js"></script>
+	<!-- WOW end-->
+
+
+	<script src="js/script.js"></script>	
+
+
+	<script>
+        // counter plugin
+        $(document).ready(function($) {
+        	$('.counter').counterUp({
+        		delay: 10,
+        		time: 1000
+        	});
+        	// counter plugin
+                 //tiltedpage start
+                 $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+      angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+      opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+      scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+      outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+      //tiltedpage end
+       // wow start
+       new WOW().init();
+    // wow end
+
+});
+        
+
+</script>
+</body>
+</html>
